@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,100,255,1)); /*Standard*/
+  height: auto;
+  width: auto;;
+}
+
+.btn {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.container-col {
+  /*------- Flexbox Support --------*/
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+.container-row {
+  /*------- Flexbox Support --------*/
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+
+  font-weight: bold;
+}
+
+.display-container-col {
+  /*------- Flexbox Support --------*/
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+
+  min-height: 400px;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+input {
+  flex-grow: 1;
+}
+
+#input-text {
+  text-align: right;
+}
+
+li {
+  list-style-type: none;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+
+li:hover {
+  background-color: yellow;
+  color: black;
+  box-shadow: 5px 5px 10px black;
+  font-weight: bolder;
+}
+
+.main-container-col, .container-col, .container-row, .display-container-col, form, div {
+  background-color:  cyan;
+}
+
+.main-container-col {
+  /*------- Flexbox Support --------*/
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+
+  /*--------- Color ---------------*/
+  background-color: white;
+
+  /*-------- Dimensions -----------*/
+  height: 537px;
+  max-width: 350px;
+  min-width: 350px;
+  margin: auto;
+  margin-top: 35px;
+
+  box-shadow: 5px 5px 20px black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+#btn-list {
+  /*------- Flexbox Support --------*/
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+
+  padding-left: 0;
+}
