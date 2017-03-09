@@ -13,6 +13,8 @@ function add(){
         // 
         // Clear the input field and create the new button
         //
+
+        // nth child
         document.getElementById("input-text").value = "";    
         var li = document.createElement("li");
         li.className = "btn";
