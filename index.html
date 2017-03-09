@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title></title>
+  </head>
+  <body>
+    <div class="main-container-col">
+      <form class="button-control">
+        <fieldset>
+          <div class="container-row">
+            Position:<input id="input-position" type="number" name="position" min="1" value="">
+          </div>
+          <div class="container-col">
+            <div class="container-row">
+              Text:<input id="input-text" type="text" name="text" autofocus>
+            </div>
+            <ul>
+              <li id="btn-update" onclick="update()">Update Button</li>
+              <li id="btn-add" onclick="add()">Add Button</li>
+              <li id="btn-remove" onclick="remove()">Remove Button</li>
+            </ul>
+          </div>
+        </fieldset>
+      </form>
+      <div class="display-container-col">
+        <form>
+          <fieldset>
+            <ul id="btn-list">
+              <li class="btn">My First Button</li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
