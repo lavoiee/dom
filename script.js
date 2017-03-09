@@ -34,21 +34,21 @@ function remove(){
 }
 
 function update(){
-    var CurrentPosition = prompt("Which button do you want to update?");
-    var position = document.getElementById("input-position").value;
-    var x = document.getElementById("input-text").value;
+    // var CurrentPosition = prompt("Which button do you want to update?");
+    // var position = document.getElementById("input-position").value;
+    // var x = document.getElementById("input-text").value;
 
-    if(x != "" && position != ""){
-        var position = document.getElementById("input-position").value;
-        elBtnList.removeChild(elBtnList.childNodes[CurrentPosition]);
-        var li = document.createElement("li");
-        li.className = "btn";
-        var textNode = document.createTextNode(x);          
-        li.appendChild(textNode);
-        elBtnList.insertBefore(li, elBtnList.childNodes[position]);
-    }
-    else {
-        alert("Now enter the new label and position");
-    }
+    // if(x != "" && position != ""){
+    //     var position = document.getElementById("input-position").value;
+    //     elBtnList.removeChild(elBtnList.childNodes[CurrentPosition]);
+    //     var li = document.createElement("li");
+    //     li.className = "btn";
+    //     var textNode = document.createTextNode(x);          
+    //     li.appendChild(textNode);
+    //     elBtnList.insertBefore(li, elBtnList.childNodes[position]);
+    // }
+    // else {
+    //     alert("Now enter the new label and position");
+    // }
 }
 
