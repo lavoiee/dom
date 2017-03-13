@@ -8,23 +8,35 @@ function add(){
     var position = document.getElementById("input-position").value;
     var x = document.getElementById("input-text").value;
 
-    if(x != "" && position != ""){
+    if(x !== "" && position !== ""){
         //
         // Clear the input field and create the new button
         //
 
         // nth child
-        document.getElementById("input-text").value = "";    
+        document.getElementById("input-text").value = "";
         var li = document.createElement("li");
+
+        // Add the event listener for the new element.
+        li.addEventListener("click", function(){
+          alert("This button's label says " + x);
+        });
+
+        //Apply the class from the original button
         li.className = "btn";
-        var textNode = document.createTextNode(x);          
+
+        // Create and append the text node to the list item.
+        var textNode = document.createTextNode(x);
         li.appendChild(textNode);
+
+        // Insert the list item and it's child text node into the list
+        // at the position chosen by the user with the spinner.
         elBtnList.insertBefore(li, elBtnList.childNodes[position]);
     }
     else {
         alert("Please enter a label name and a position for your new button");
     }
-    
+
     document.getElementById("input-text").focus();
 }
 
@@ -34,21 +46,9 @@ function remove(){
 }
 
 function update(){
-    // var CurrentPosition = prompt("Which button do you want to update?");
-    // var position = document.getElementById("input-position").value;
-    // var x = document.getElementById("input-text").value;
-
-    // if(x != "" && position != ""){
-    //     var position = document.getElementById("input-position").value;
-    //     elBtnList.removeChild(elBtnList.childNodes[CurrentPosition]);
-    //     var li = document.createElement("li");
-    //     li.className = "btn";
-    //     var textNode = document.createTextNode(x);          
-    //     li.appendChild(textNode);
-    //     elBtnList.insertBefore(li, elBtnList.childNodes[position]);
-    // }
-    // else {
-    //     alert("Now enter the new label and position");
-    // }
+    var position = document.getElementById("input-position").value;
+    var x = document.getElementById("input-text").value;
+    var targetNode = elBtnList.childNodes[position];
+    var firstChild = targetNode.firstChild;
+    firstChild.nodeValue = x;
 }
-

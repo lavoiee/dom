@@ -74,6 +74,7 @@ li:hover {
   color: black;
   box-shadow: 5px 5px 10px black;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .main-container-col, .container-col, .container-row, .display-container-col, form, div {
